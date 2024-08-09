@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Home.css";
 import { statisticals } from "../data";
-import { AcceleratedAnimation, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { IoArrowUpOutline } from "react-icons/io5";
 
 function Home() {
