@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CarWebsite/static/css/main.fe294f40.css",
-    "main.js": "/CarWebsite/static/js/main.d394c88e.js",
+    "main.js": "/CarWebsite/static/js/main.2a5887c4.js",
     "static/media/dark_G_Class.png": "/CarWebsite/static/media/dark_G_Class.a91e878abff5de596e3d.png",
     "static/media/dark_G_Class_2.png": "/CarWebsite/static/media/dark_G_Class_2.8c06e15ec455d9a258ee.png",
     "static/media/dark_G_Class_3.png": "/CarWebsite/static/media/dark_G_Class_3.be4db072bf438632fb51.png",
@@ -19,10 +19,10 @@
     "static/media/Bottom_right_circle.svg": "/CarWebsite/static/media/Bottom_right_circle.b3411dbae6405b23f3fc.svg",
     "static/media/Top_left_circle.svg": "/CarWebsite/static/media/Top_left_circle.8321f56beb7470c8c8b1.svg",
     "main.fe294f40.css.map": "/CarWebsite/static/css/main.fe294f40.css.map",
-    "main.d394c88e.js.map": "/CarWebsite/static/js/main.d394c88e.js.map"
+    "main.2a5887c4.js.map": "/CarWebsite/static/js/main.2a5887c4.js.map"
   },
   "entrypoints": [
     "static/css/main.fe294f40.css",
-    "static/js/main.d394c88e.js"
+    "static/js/main.2a5887c4.js"
   ]
 }
