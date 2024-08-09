@@ -1,0 +1,29 @@
+.bubble_bar {
+    position: fixed;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 500;
+}
+
+@media (max-width: 565px) {
+    .bubble_bar {
+        display: none;
+    }
+}
+
+.bubble {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary_color);
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.bubble.active {
+    background-color: var(--accent_color);
+}

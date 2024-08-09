@@ -1,0 +1,277 @@
+.listings {
+    min-height: 100vh;
+}
+
+.listings .container {
+    height: inherit;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.listings .container .listings_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listings .container .listings_head .listings_maintitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--accent_color);
+    font-size: 64px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.listings .container .listings_head .filter_btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.listings .container .listings_head .filter_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--white_color);
+    width: 120px;
+    height: 30px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: var(--radius_5);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--accent_color);
+    text-transform: capitalize;
+}
+
+.listings .container .listings_maintitle .filter_btn.active {
+    height: 90px;
+}
+
+.listings .container .listings_subtitle {
+    color: var(--secondary_color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin: 15px auto 100px auto;
+}
+
+.listings .container .listings_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.listings .container .listings_cards .listing_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--secondary_color);
+    border-radius: var(--radius_20);
+    padding: 20px;
+    background-color: #F2F2F2;
+    position: relative;
+    overflow: hidden;
+}
+
+.listings .container .listings_cards .listing_card:hover {
+    transform: translateY(-10px);
+}
+
+.listings .container .listings_cards .listing_card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 270px;
+    background-color: var(--accent_color);
+}
+
+.listings .container .listings_cards .listing_card .new_label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--white_color);
+    background-color: #53BB51;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 20;
+
+}
+
+.listings .container .listings_cards .listing_card .price_tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: var(--radius_5);
+    background-color: var(--white_color);
+    z-index: 50;
+    text-transform: capitalize;
+}
+
+.listings .container .listings_cards .listing_card .price_tag span {
+    color: var(--accent_color);
+    margin-left: 5px;
+}
+
+.listings .container .listings_cards .listing_card .status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    width: 120px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: var(--radius_5);
+    color: var(--white_color);
+    z-index: 50;
+    text-transform: capitalize;
+}
+
+.listings .container .listings_cards .listing_card .status.rentable {
+    background-color: #AEB74A;
+}
+
+.listings .container .listings_cards .listing_card .status.exchangeable {
+    background-color: #53BB51;
+}
+
+.listings .container .listings_cards .listing_card .status.unexchangeable {
+    background-color: #CC3D3D;
+}
+
+.listings .container .listings_cards .listing_card .curve {
+    position: absolute;
+    top: 268px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent_color);
+}
+
+.listings .container .listings_cards .listing_card .curve::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #F2F2F2;
+}
+
+.listings .container .listings_cards .listing_card .card_image {
+    position: relative;
+    z-index: 1;
+}
+
+.listings .container .listings_cards .listing_card img {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.listings .container .listings_cards .listing_card .card_text {
+    position: relative;
+    z-index: 200;
+}
+
+.listings .container .listings_cards .listing_card .listing_card_title {
+    color: var(--accent_color);
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+} 
+
+.listings .container .listings_cards .listing_card .listing_card_details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.listings .container .listings_cards .listing_card .listing_card_details .listing_card_detail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-transform: capitalize;
+}
+
+.listings .container .listings_cards .listing_card .listing_card_details .listing_card_detail img {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+}
+
+.listings .container .listings_cards .listing_card .listing_card_details .listing_card_detail span {
+    color: var(--secondary_color);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalizea;
+}
+
+
+.listings .container .listings_cards .listing_card .listing_card_description {
+    color: var(--secondary_color);
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.8;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.listings .container .listings_cards .listing_card .listing_card_btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listings .container .listings_cards .listing_card .listing_card_btns button {
+    width: calc(50% - 15px);
+    height: 35px;
+    border-radius: var(--radius_10);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.listings .container .listings_cards .listing_card .listing_card_btns button:first-child {
+    color: var(--white_color);
+    background-color: var(--accent_color);
+    border-color: var(--accent_color);
+}
+
+.listings .container .listings_cards .listing_card .listing_card_btns button:last-child {
+    color: var(--accent_color);
+    background-color: var(--white_color);
+    border-color: var(--accent_color);
+}

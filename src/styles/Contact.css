@@ -1,0 +1,372 @@
+.contact {
+    min-height: 100vh;
+}
+
+.contact .container .contact_maintitle {
+    color: var(--accent_color);
+    font-size: 64px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.contact .container .contact_subtitle {
+    color: var(--secondary_color);
+    font-size: 22px;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 80px;
+}
+
+
+.contact .container .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 500px;
+    background-color: var(--form_color);
+    padding: 20px;
+    border-radius: var(--radius_10);
+    margin-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+    .contact .container .form {
+        flex-direction: column;
+        height: fit-content;
+    }
+}
+
+.contact .container .form .form_information {
+    width: 40%;
+    height: 100%;
+    background: var(--accent_color);
+    border-radius: var(--radius_10);
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .contact .container .form .form_information {
+        width: 100%;
+    }
+}
+
+.contact .container .form .form_information::before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #dddee357;
+}
+
+.contact .container .form .form_information .form_maintitle {
+    color: var(--white_color);
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.contact .container .form .form_information .form_subtitle {
+    color: var(--white_color);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    opacity: 0.5;
+    margin-bottom: 50px;
+}
+
+.contact .container .form .form_information  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .container .form .form_information .info_methods {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    gap: 30px;
+}
+
+.contact .container .form .form_information .info_methods .info_method {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact .container .form .form_information .info_methods .info_method svg {
+    color: var(--white_color);
+    font-size: 24px;
+}
+
+.contact .container .form .form_information .info_methods .info_method span {
+    color: var(--secondary_color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact .container .form .form_fields {
+    width: calc(60% - 30px);
+}
+
+@media (max-width: 992px) {
+    .contact .container .form .form_fields {
+        width: 100%;
+    }
+}
+
+.contact .container .form .form_fields .form_field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact .container .form .form_fields .form_field:first-child {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 575px) {
+    .contact .container .form .form_fields .form_field {
+        flex-direction: column;
+    }
+}
+
+.contact .container .form .form_fields .form_field .field {
+    width: 100%;
+    position: relative;
+}
+
+.contact .container .form .form_fields .form_field .name_field {
+    width: calc(50% - 15px);
+}
+
+@media (max-width: 575px) {
+    .contact .container .form .form_fields .form_field .name_field {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.contact .container .form .form_fields .form_field .phone_field {
+    width: calc(50% - 15px);
+}
+
+@media (max-width: 575px) {
+    .contact .container .form .form_fields .form_field .phone_field {
+        width: 100%;
+    }
+}
+
+.contact .container .form .form_fields .form_field .field input {
+    color: var(--secondary_color);
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: var(--radius_10);
+}
+
+.contact .container .form .form_fields .form_field .field input:focus {
+    outline: none;
+}
+
+.contact .container .form .form_fields .form_field .field input:focus ~ div span {
+    left: 0;
+}
+
+.contact .container .form .form_fields .form_field .field input:focus ~ label {
+    top: -17px;
+    opacity: 1;
+}
+
+.contact .container .form .form_fields .form_field .field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondary_color);
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: var(--trans_05);
+}
+
+.contact .container .form .form_fields .form_field .field div {
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent_color);
+    background-color: var(--white_color);
+    transition: var(--trans_05);
+    overflow: hidden;
+    position: relative;
+}
+.contact .container .form .form_fields .form_field .field div span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--accent_color);
+    transition: var(--trans_05);
+}
+
+.contact .container .form .form_fields .form_field .field h4 {
+    color: var(--secondary_color);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact .container .form .form_fields .form_field .field textarea {
+    width: 100%;
+    height: 120px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: #d2d2d2;
+    border-bottom: 3px solid var(--white_color);
+}
+
+.contact .container .form .form_fields .form_field .field textarea:focus {
+    outline: none;
+}
+
+.contact .container .form .form_fields .form_btn {
+    width: 200px;
+    height: 40px;
+    color: var(--white_color);
+    background-color: var(--accent_color);
+    border: none;
+    border-radius: var(--radius_10);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.contact .container .contact_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to right, var(--accent_color), var(--primary_color));
+    border-radius: var(--radius_20);
+    padding: 20px;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--trans_05);
+}
+
+@media (max-width: 768px) {
+    .contact .container .contact_card {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.contact .container .contact_card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    width: 250px;
+    height: 600px;
+    background-color: var(--primary_color);
+    transform: rotate(15deg) translateY(-50%);
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .contact .container .contact_card::before {
+        display: none;
+    }
+}
+
+.contact .container .contact_card h4 {
+    color: var(--white_color);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.contact .container .contact_card h2 {
+    color: var(--white_color);
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .contact .container .contact_card h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact .container .contact_card h2 {
+        font-size: 26px;
+    }
+}
+
+.contact .container .contact_card .contact_card_btn {
+    width: 200px;
+    height: 40px;
+    color: var(--white_color);
+    background-color: var(--secondary_color);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: var(--radius_10);
+    cursor: pointer;
+}
+
+.contact .container .contact_card .contact_card_btn:focus {
+    outline: none;
+}
+
+
+.contact .container .contact_card .card_photo {
+    position: relative;
+    width: 500px;
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+    .contact .container .contact_card .card_photo {
+        display: none;
+    }
+}
+
+.contact .container .contact_card .card_photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
