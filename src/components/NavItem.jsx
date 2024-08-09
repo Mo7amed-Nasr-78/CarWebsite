@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../styles/NavList.css";
 import { motion } from "framer-motion";
 import { navItems } from "../data";

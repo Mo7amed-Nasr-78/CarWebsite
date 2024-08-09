@@ -29,22 +29,22 @@ export const statisticals = [
 
 export const serviceCards = [
     {
-        img: '/assets/Money.svg',
+        img: './assets/Money.svg',
         title: 'sell your car',
         description: "Discover the easiest way to sell your car. List your vehicle, reach thousands of potential buyers, and get the best value quickly and effortlessly."
     },
     {
-        img: '/assets/Rent.svg',
+        img: './assets/Rent.svg',
         title: 'rent a car',
         description: "Discover the easiest way to sell your car. List your vehicle, reach thousands of potential buyers, and get the best value quickly and effortlessly."
     },
     {
-        img: '/assets/Exchage.svg',
+        img: './assets/Exchage.svg',
         title: 'exchange your car',
         description: "Upgrade or swap your vehicle with our hassle-free exchange service. Find the perfect match for your needs while getting a great deal on your current car."
     },
     {
-        img: '/assets/Offer.svg',
+        img: './assets/Offer.svg',
         title: 'special offer',
         description: "Take advantage of our exclusive offers and discounts. From limited-time deals to seasonal promotions, we provide unbeatable savings on a variety of cars."
     },

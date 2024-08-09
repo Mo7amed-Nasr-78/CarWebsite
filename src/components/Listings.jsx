@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "../styles/Listings.css";
 import { listingsCards } from "../data";
 import "../styles/Listings.css";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Listings() {  
 
